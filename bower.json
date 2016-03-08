@@ -1,0 +1,19 @@
+{
+  "name": "weave-web",
+  "version": "0.0.1",
+  "author": "Richard Osterloh <richard.osterloh@gmail.com>",
+  "description": "Weave Web App with Polymer",
+  "keywords": [
+    "webcomponents",
+    "web components",
+    "polymer",
+    "webview"
+  ],
+  "dependencies": {
+    "iron-elements": "PolymerElements/iron-elements#^1.0.8",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.7",
+    "platinum-elements": "PolymerElements/platinum-elements#^2.0.0",
+    "google-signin": "GoogleWebComponents/google-signin#^1.3.2"
+  },
+  "ignore": []
+}
