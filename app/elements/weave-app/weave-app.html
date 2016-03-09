@@ -24,6 +24,17 @@
       background-color: #42A5F5;
     }
 
+    .list {
+      padding: 0;
+      border-right: 1px solid #ccc;
+    }
+
+    .list paper-item {
+      height: 80px;
+      border-bottom: 1px solid #dedede;
+      background-color: #fafafa;
+    }
+
     .main-panel[mode=cover] .content {
       padding: 0 64px 0 4px;
     }
@@ -35,12 +46,12 @@
     }
 
     paper-material {
-      height: 1400;
+      height: 900px;
       background-color: #fff;
     }
 
     .main-panel[mode=cover] paper-material {
-      max-width: 640px;
+      max-width: 780px;
       margin: 64px auto;
     }
   </style>
@@ -49,22 +60,22 @@
 
     <paper-drawer-panel id="drawerPanel" responsive-width="1024px" drawer-width="{{drawerWidth}}">
 
-      <paper-header-panel class="list-panel" drawer mode="seamed">
+      <!-- <paper-header-panel class="list-panel" drawer mode="seamed"> -->
 
         <!-- List Toolbar -->
-        <paper-toolbar class$="{{toolbarClass}}"></paper-toolbar>
+        <!-- <paper-toolbar class$="{{toolbarClass}}"></paper-toolbar> -->
 
         <!-- List -->
-        <paper-menu class="list" on-iron-activate="_listTap">
-          <paper-item></paper-item>
-        </paper-menu>
-      </paper-header-panel>
+        <!-- <paper-menu class="list" on-iron-activate="_listTap"> -->
+          <!-- <paper-item></paper-item> -->
+        <!-- </paper-menu> -->
+      <!-- </paper-header-panel> -->
 
       <paper-header-panel class="main-panel" main mode="{{mainMode}}">
 
         <!-- Main Toolbar -->
         <paper-toolbar class$="{{toolbarClass}}">
-          <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+          <!-- <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button> -->
         </paper-toolbar>
 
         <div class="content">
@@ -75,7 +86,9 @@
 
         </div>
 
-    </paper-header-panel>
+      </paper-header-panel>
+
+    </paper-drawer-panel>
 
     <iron-media-query query="(max-width: 780px)" query-matches="{{_isMobile}}"></iron-media-query>
 

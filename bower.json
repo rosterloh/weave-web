@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "author": "Richard Osterloh <richard.osterloh@gmail.com>",
   "description": "Weave Web App with Polymer",
+  "main": "src/index.html",
+  "license": "MIT",
   "keywords": [
     "webcomponents",
     "web components",
